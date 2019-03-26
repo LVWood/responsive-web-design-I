@@ -143,6 +143,7 @@ header nav a:hover {
         border-bottom: 1px solid black;
         width: 100%;
         padding-bottom: 10px;
+        margin: 0;
     }
 }
 
@@ -208,21 +209,27 @@ header nav a:hover {
 /* MAIN CONTENT */
 
 .main-content {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
     width: 100%;
     border-top: 1px solid black;
     border: 2px solid yellow;
 }
-.main-content .top-content {
+
+.main-content .top-content, .bottom-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.main-content .text-content {
-    width: 49%;
+.top-content .text-content {
+    width: 49.5%;
+    padding: 10px;
+    border: 1px dotted teal;
+}
+.bottom-content .text-content {
+    width: 32.5%;
     padding: 10px;
     border: 1px dotted teal;
 }
@@ -237,106 +244,26 @@ header nav a:hover {
 @mobile(max-width: 500px) {
     .main-content {
         border-top: 1px solid black;
-        display: block;
-        width: 100%
         border: 2px solid yellow;
         width: 100%;
     }
-    .main-content .top-content .text-content {
-        display: block;
-        width: 90%;
+     .top-content .text-content {
+        width: 99%;
         border: 2px solid pink;
+    }
+    .bottom-content .text-content {
+        width: 99%;
     }
 }
 
 .contact {
-    margin-top: 57px;
+    margin-top: 20px;
     border-top: 1px solid black;
     padding: 39px 10px 0;
 }
 
 .contact p {
     margin: 20px 0;
-}
-
-.top-content {
-    border-bottom: 1px solid black;
-    margin: 20px auto;
-    padding-bottom: 20px;
-}
-
-.top-content .top-text {
-    margin: 20px 0;
-    line-height: 1.25;
-    padding-bottom: 20px;
-}
-
-.top-content h1 {
-    font-size: 28px;
-    margin: 20px 0;
-}
-
-.box-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    border-bottom: 1px solid black;
-    padding-bottom: 20px;
-}
-
-.service-boxes {
-    background-color: lightgray;
-    border: 1px solid black;
-    padding: 20px;
-    width: 410px;
-    line-height: 1.25;
-    margin: 10px 0;
-}
-
-.service-boxes h3 {
-    font-size: 21px;
-}
-
-.service-boxes button {
-    margin: 10px 0;
-}
-
-.bottom-content {
-    display: flex;
-    justify-content: space-between;
-    margin: 30px 0;
-}
-
-.bottom-content .bottom-text-box {
-    margin: 0 40px 20px 0;
-    line-height: 1.25;
-}
-
-.bottom-content h3 {
-    font-size: 21px;
-}
-
-ul {
-    line-height: 1.75;
-    list-style-type: square;
-    list-style-position: inside;
-    margin: 10px 0;
-}
-
-/* I don't know why these bullets aren't showing up. I worked on it for a while then gave up. */
-
-.testimonials .text-box {
-    width: 100%;
-    line-height: 1.25;
-}
-
-.testimonials h3 {
-    font-size: 21px;
-}
-
-.testimonials .box-container .service-boxes {
-    display: flex;
-    justify-content: space-between
 }
 
 footer {
