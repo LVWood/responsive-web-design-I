@@ -118,7 +118,6 @@ header nav a:hover {
     }
 }
 
-
 /* MOBILE DISPLAY HEADER-NAV */
 @media(max-width: 500px) {
     header {
@@ -128,7 +127,7 @@ header nav a:hover {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: stretch;
         width: 100%;
     }
     header nav a {
@@ -139,9 +138,9 @@ header nav a:hover {
         margin: 10px 0;
         text-align: center;
     }
-    header .logo {
+    header nav .logo {
+        align-items: center;
         border-bottom: 1px solid black;
-        width: 100%;
         padding-bottom: 10px;
         margin: 0;
     }
@@ -234,25 +233,24 @@ header nav a:hover {
     /* border: 1px dotted teal; */
 }
 
-
 /* TABLET MAIN CONTENT */
-@mobile(max-width: 800px) {
 
-}
 
 /* MOBILE MAIN CONTENT */
-@mobile(max-width: 500px) {
+@media(max-width: 500px) {
     .main-content {
+        width: 100%;
         border-top: 1px solid black;
-        /* border: 2px solid yellow; */
+    }
+    .main-content .top-content, .bottom-content {
+        display: block;
         width: 100%;
     }
-     .top-content .text-content {
-        width: 99%;
-        /* border: 2px solid pink; */
+    .top-content .text-content {
+        width: 100%;
     }
     .bottom-content .text-content {
-        width: 99%;
+        width: 100%;
     }
 }
 
