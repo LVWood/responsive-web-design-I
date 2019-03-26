@@ -80,14 +80,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px dotted red;
+    /* border: 1px dotted red; */
 }
 
 header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px dotted blue;
+    /* border: 1px dotted blue; */
     width: 100%;
 
 }
@@ -96,7 +96,7 @@ header nav a {
     font-size: 14px;
     color: gray;
     text-decoration: none;
-    border: 1px solid pink;
+    /* border: 1px solid pink; */
     padding: 0 15px;
     margin: 20px 0;
 }
@@ -153,7 +153,7 @@ header nav a:hover {
     display: flex;
     align-items: center;
     padding-top: 10px;
-    border: 1px solid turquoise;
+    /* border: 1px solid turquoise; */
 }
 
 .cta .cta-text {
@@ -162,7 +162,7 @@ header nav a:hover {
     font-size: 77px;
     text-align: center;
     padding: 0px 75px;
-    border: 1px dashed blue;
+    /* border: 1px dashed blue; */
 }
 
 .cta .cta-text button {
@@ -173,7 +173,7 @@ header nav a:hover {
     font-size: 17px;
     border: 1px solid black;
     cursor: pointer;
-    border: 1px dotted purple;
+    /* border: 1px dotted purple; */
 }
 
 .cta .cta-text button:hover {
@@ -215,7 +215,7 @@ header nav a:hover {
     align-items: center; */
     width: 100%;
     border-top: 1px solid black;
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
 }
 
 .main-content .top-content, .bottom-content {
@@ -226,12 +226,12 @@ header nav a:hover {
 .top-content .text-content {
     width: 49.5%;
     padding: 10px;
-    border: 1px dotted teal;
+    /* border: 1px dotted teal; */
 }
 .bottom-content .text-content {
     width: 32.5%;
     padding: 10px;
-    border: 1px dotted teal;
+    /* border: 1px dotted teal; */
 }
 
 
@@ -244,12 +244,12 @@ header nav a:hover {
 @mobile(max-width: 500px) {
     .main-content {
         border-top: 1px solid black;
-        border: 2px solid yellow;
+        /* border: 2px solid yellow; */
         width: 100%;
     }
      .top-content .text-content {
         width: 99%;
-        border: 2px solid pink;
+        /* border: 2px solid pink; */
     }
     .bottom-content .text-content {
         width: 99%;
